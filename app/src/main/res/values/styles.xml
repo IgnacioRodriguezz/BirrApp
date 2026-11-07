@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+      Material3 pinta los chips seleccionados con su color lila por defecto.
+      La aplicacion usa un solo color de acento, asi que hay que decirselo.
+    -->
+    <style name="Chip.Filter.Signal" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="chipStrokeColor">@color/chip_stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="android:textSize">13sp</item>
+        <item name="chipMinHeight">34dp</item>
+    </style>
+
+    <!-- Lo mismo para la pastilla de la pestana activa. -->
+    <style name="BottomNav.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/signal_dim</item>
+    </style>
+</resources>

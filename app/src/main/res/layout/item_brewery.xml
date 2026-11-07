@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Fila del listado. No usa CardView a proposito: las filas se separan con un
+  filete fino, que da una lista mas densa y legible que una pila de tarjetas.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingStart="@dimen/gutter"
+    android:paddingTop="@dimen/row_vertical"
+    android:paddingEnd="@dimen/gutter"
+    android:paddingBottom="@dimen/row_vertical">
+
+    <FrameLayout
+        android:id="@+id/logoContainer"
+        android:layout_width="@dimen/logo_disc"
+        android:layout_height="@dimen/logo_disc"
+        android:background="@drawable/bg_logo_disc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="@dimen/logo_image"
+            android:layout_height="@dimen/logo_image"
+            android:layout_gravity="center"
+            android:contentDescription="@string/cd_logo"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/ic_saved" />
+
+        <TextView
+            android:id="@+id/textInitial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/text_tertiary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="A"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/labelClosed"
+        app:layout_constraintStart_toEndOf="@id/logoContainer"
+        app:layout_constraintTop_toTopOf="@id/logoContainer"
+        tools:text="2Kids Brewing Company" />
+
+    <TextView
+        android:id="@+id/labelClosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_label_outline"
+        android:paddingStart="8dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="3dp"
+        android:text="@string/label_closed"
+        android:textColor="@color/text_tertiary"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/textName"
+        app:layout_constraintEnd_toStartOf="@id/buttonSave"
+        app:layout_constraintTop_toTopOf="@id/textName"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textMeta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_secondary"
+        android:textSize="12.5sp"
+        app:layout_constraintEnd_toStartOf="@id/buttonSave"
+        app:layout_constraintStart_toStartOf="@id/textName"
+        app:layout_constraintTop_toBottomOf="@id/textName"
+        tools:text="micro · San Diego" />
+
+    <TextView
+        android:id="@+id/textAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_tertiary"
+        android:textSize="11.5sp"
+        app:layout_constraintEnd_toStartOf="@id/buttonSave"
+        app:layout_constraintStart_toStartOf="@id/textName"
+        app:layout_constraintTop_toBottomOf="@id/textMeta"
+        tools:text="8680 Miralani Dr Ste 123" />
+
+    <ImageButton
+        android:id="@+id/buttonSave"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/marker_none"
+        android:padding="10dp"
+        android:src="@drawable/ic_marker_outline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

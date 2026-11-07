@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">BirrApp</string>
+
+    <string name="tab_directory">Directorio</string>
+    <string name="tab_saved">Guardadas</string>
+
+    <string name="header_eyebrow">DIRECTORIO DE CERVECERÍAS</string>
+    <string name="header_title">BirrApp</string>
+    <string name="search_hint">Ciudad o nombre</string>
+
+    <string name="filter_all">Todas</string>
+    <string name="filter_micro">micro</string>
+    <string name="filter_brewpub">brewpub</string>
+    <string name="filter_regional">regional</string>
+
+    <string name="label_closed">CERRADA</string>
+    <string name="marker_visited">Visitada</string>
+    <string name="marker_pending">Pendiente por visitar</string>
+    <string name="marker_none">Sin guardar</string>
+
+    <string name="empty_generic">No encontramos cervecerías</string>
+    <string name="empty_city">No hay cervecerías cargadas en %1$s</string>
+    <string name="empty_name">Ninguna cervecería coincide con %1$s</string>
+    <string name="empty_saved_title">Todavia no guardaste ninguna</string>
+    <string name="empty_saved_body">Tocá el marcador de una cervecería para anotarla como visitada o pendiente.</string>
+
+    <string name="error_network">Sin conexión. Mostramos lo que tenes guardado.</string>
+    <string name="error_generic">Algo salió mal al consultar el directorio.</string>
+    <string name="action_retry">Reintentar</string>
+
+    <string name="detail_address">DIRECCIÓN</string>
+    <string name="detail_phone">TELÉFONO</string>
+    <string name="detail_website">SITIO WEB</string>
+    <string name="detail_call">Llamar</string>
+    <string name="detail_open">Abrir</string>
+    <string name="detail_no_data">sin dato</string>
+    <string name="detail_visited">Visitada</string>
+    <string name="detail_pending">Pendiente</string>
+    <string name="detail_save_as">GUARDAR COMO</string>
+    <string name="detail_no_map">Esta cervecería no tiene ubicación cargada</string>
+    <string name="detail_back">Volver</string>
+    <string name="detail_attribution">Datos de Open Brewery DB · Mapa © OpenStreetMap</string>
+
+    <string name="dialog_remove_title">Quitar de guardadas</string>
+    <string name="dialog_remove_message">¿Querés sacar %1$s de tu lista?</string>
+    <string name="dialog_remove_confirm">Quitar</string>
+    <string name="dialog_cancel">Cancelar</string>
+
+    <string name="cd_logo">Logo de la cervecería</string>
+    <string name="cd_search">Buscar</string>
+    <string name="detail_map_error">No pudimos cargar el mapa. Revisá tu conexión.</string>
+    <string name="detail_map_retry">Reintentar</string>
+</resources>

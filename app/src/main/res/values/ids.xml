@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Claves para guardar estado en la vista del mapa. -->
+    <item name="map_error_listener" type="id" />
+    <item name="map_block_key" type="id" />
+</resources>

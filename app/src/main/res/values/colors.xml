@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Neutros tintados hacia el azul del mapa. Nunca negro ni blanco puro. -->
+    <color name="ink">#FF13161A</color>
+    <color name="surface">#FF1B1F24</color>
+    <color name="surface_high">#FF222730</color>
+    <color name="hairline">#FF292E34</color>
+    <color name="hairline_soft">#FF21252B</color>
+
+    <color name="text_primary">#FFF2EFE9</color>
+    <color name="text_secondary">#FF8F979F</color>
+    <color name="text_tertiary">#FF616971</color>
+
+    <!-- Unico color de acento: el del marcador del mapa. -->
+    <color name="signal">#FFE85D3D</color>
+    <color name="signal_dim">#FF48221B</color>
+    <color name="pending">#FFE2A33C</color>
+</resources>

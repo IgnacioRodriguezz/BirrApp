@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_no_app">No hay ninguna aplicación para abrir esto</string>
+    <string name="saved_counts">%1$d visitadas · %2$d pendientes</string>
+
+    <plurals name="result_count">
+        <item quantity="one">%d cervecería</item>
+        <item quantity="other">%d cervecerías</item>
+    </plurals>
+</resources>

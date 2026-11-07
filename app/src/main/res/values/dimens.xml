@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gutter">20dp</dimen>
+    <dimen name="row_vertical">16dp</dimen>
+    <dimen name="logo_disc">46dp</dimen>
+    <dimen name="logo_image">28dp</dimen>
+</resources>
